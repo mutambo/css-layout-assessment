@@ -8,6 +8,7 @@ body {
 img {
     max-width: 100%;
     display: block;
+    float: right;
 }
 
 .logo {
@@ -21,11 +22,15 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    
+    
 }
 
 nav {
     background-color: #000;
     padding: 0.5em;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -35,20 +40,47 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
+    
 }
 
 .photos {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,80%);
+    grid-column-gap: 1px;
+    grid-column-start: -1;
+    grid-column-end: 3;
+    grid-gap: 1px;
+    float:left;
+    text-align: right;
+    height: 100%;
+    padding-left: 1em;
 }
 
 .feature {
     width: 200px;
+    float: left;
+    padding-right: 1em;
+}
+article{
+    width: 80%;
+    float: left;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0em;
+}
+h2{
+    padding-left: 1em;
 }
